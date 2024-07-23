@@ -21,5 +21,5 @@ This project uses the following projects:
 1. **Clone the Repository**
 
    ```bash
-   git clone --recursive [https://github.com/yourusername/new_project.git](https://github.com/hwanhuh/Neural-Rendering-from-VGGSfM-Mast3r.git)
+   git clone --recursive https://github.com/hwanhuh/Neural-Rendering-from-VGGSfM-Mast3r.git
    cd Neural-Rendering-from-VGGSfM-Mast3r
