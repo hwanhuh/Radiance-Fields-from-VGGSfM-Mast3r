@@ -59,7 +59,7 @@ Due to accurate camera pose reconstruction utilizing Bundle Adjustment, VGGSfM's
 
 ## About VGGSfM and Mast3r 
 
-###  VGGSfM: Visual Geometry Group Structure-from-Motion
+###  VGGSfM: Visual Geometry Grounded Deep Structure From Motion
 VGGSfM introduces a fully differentiable SfM pipeline, designed to integrate deep learning models into every stage of the SfM process. This method includes:
 - End-to-End Differentiability: The pipeline is fully differentiable, allowing for end-to-end training and optimization.
 - Superior Camera Reconstruction: Provides highly accurate camera parameter reconstruction, which is beneficial for downstream tasks like neural rendering.
