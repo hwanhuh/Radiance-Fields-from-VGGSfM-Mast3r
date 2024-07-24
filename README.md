@@ -15,9 +15,9 @@ pip install viser==0.1.29
 pip install plyfile
 ```
 ### Features
-- **Convert MASt3R's capability to the COLMAP-compatible format** (in MASt3R installed environment)
+- **Convert MASt3R's capability to the COLMAP-compatible format** (in MASt3R installed environment) it saves mast3r results to the COLMAP-compatible cameras/images/points3d
 ```bash
-python colmap_from_mast3r.py 
+python colmap_from_mast3r.py --images_dir <path/to/images> --save_dir <path/to/save/colmaps> --model_path <path/to/mast3r/model/ckpt> 
 ```
 - **Online COLMAP results viewer**
 ```bash
