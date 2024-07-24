@@ -1,4 +1,4 @@
-# Rafiance Fields from VGGSfM and Mast3r, and Their Comparison
+# Radiance Fields from VGGSfM and Mast3r, and Their Comparison
 
 This project aims to explore Gaussian Splatting using two different wild deep-based camera-pose & 3D pointcloud reconstruction methodologies: VGGSfM and Mast3r. 
 The objective is to compare their performances and understand the advantages and limitations of each approach.
@@ -15,11 +15,13 @@ pip install viser==0.1.29
 pip install plyfile
 ```
 ### Features
-- **Convert MASt3R's capability to the COLMAP-compatible format** (in MASt3R installed environment) it saves mast3r results to the COLMAP-compatible cameras/images/points3d
+- **Convert MASt3R's capability to the COLMAP-compatible format** (in MASt3R installed environment)
+   - it saves mast3r results to the COLMAP-compatible cameras/images/points3d
 ```bash
 python colmap_from_mast3r.py --images_dir <path/to/images> --save_dir <path/to/save/colmaps> --model_path <path/to/mast3r/model/ckpt> 
 ```
 - **Online COLMAP results viewer**
+   - If you want to visualize colored VGGSfM's pointcloud, see my issue: [link](https://github.com/facebookresearch/vggsfm/issues/32) 
 ```bash
 python colmap_vis.py --images_dir <path/to/images> --colmap_path <path/to/colmaps/> 
 ```
