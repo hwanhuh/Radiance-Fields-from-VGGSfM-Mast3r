@@ -10,7 +10,7 @@ from pathlib import Path
 from PIL import Image
 from typing import NamedTuple, Optional
 
-sys.path.append('/home/threedgen/Projects/hwan/mast3r')
+sys.path.append(os.path.join(current_dir, 'mast3r'))
 from mast3r.model import AsymmetricMASt3R
 from mast3r.fast_nn import fast_reciprocal_NNs
 from mast3r.cloud_opt.sparse_ga import sparse_global_alignment
