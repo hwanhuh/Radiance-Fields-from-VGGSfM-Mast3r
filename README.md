@@ -5,8 +5,8 @@ The objective is to compare their performances and understand the advantages and
 
 ## Project Structure
 
-- **VGGSfM**: Results of (2D) Gaussian Splatting using VGGSfM.
-- **Mast3r**: Implementation and results of (2D) Gaussian Splatting using Mast3r.
+- [**VGGSfM**](https://github.com/facebookresearch/vggsfm): Results of (2D) Gaussian Splatting using VGGSfM.
+- [**Mast3r**](https://github.com/naver/mast3r): Implementation and results of (2D) Gaussian Splatting using Mast3r.
 
 ### Installation 
 You should install Viser and plyfile 
