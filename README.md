@@ -21,7 +21,7 @@ pip install plyfile
 python colmap_from_mast3r.py --images_dir <path/to/images> --save_dir <path/to/save/colmaps> --model_path <path/to/mast3r/model/ckpt> 
 ```
 - **Online COLMAP results viewer**
-   - If you want to visualize colored VGGSfM's pointcloud, see my issue: [link](https://github.com/facebookresearch/vggsfm/issues/32) 
+   - For visualizing colored VGGSfM point clouds, refer to this: [link](https://github.com/facebookresearch/vggsfm/issues/32) 
 ```bash
 python colmap_vis.py --images_dir <path/to/images> --colmap_path <path/to/colmaps/> 
 ```
@@ -47,9 +47,7 @@ I tested on NLE_tower in MASt3R, and my custom data; penguin and guitar. Each da
 
 
 ### Summary 
-As can be seen, MASt3R is not suitable for inverse rendering but provides more dense and diverse point cloud reconstruction results compared to VGGSfM. 
-Due to accurate camera pose reconstruction utilizing Bundle Adjustment, VGGSfM's camera pose is more suitable for inverse rendering. 
-(VGGSfM's camera pose has less than 0.01 angular distance error compared to COLMAP. However, MASt3R's pose has more than 0.1 angular distance error.)
+MASt3R is not suitable for inverse rendering but provides denser and more diverse point cloud reconstructions compared to VGGSfM. VGGSfM's accurate camera pose reconstruction, utilizing Bundle Adjustment, makes it more suitable for inverse rendering. Specifically, VGGSfM's camera pose has less than 0.01 angular distance error compared to COLMAP, while MASt3R's pose has over 0.1 angular distance error.
 
 - Both methods are more robust than COLMAP. In my experiment, COLMAP fails to reconstruct all the above datasets. 
 - Both methods have shortcomings with limited VRAM capacity, but VGGSfM handles it better. 
@@ -58,6 +56,15 @@ Due to accurate camera pose reconstruction utilizing Bundle Adjustment, VGGSfM's
 | COLMAP | VGGSfM |
 | --- | --- |
 | <img src="assets/pen_colmap.png" alt="Pen dense COLMAP" /> | <img src="assets/pen_vggsfm.png" alt="Pen dense VGGSfM" /> |
+
+### Further Camera Pose Refinement
+
+As discussed in [InstantSplat](https://arxiv.org/abs/2403.20309) and [issue #2](https://github.com/hwanhuh/Radiance-Fields-from-VGGSfM-Mast3r/issues/2), 
+MASt3R (and VGGSfM) poses can serve as a good initial point of the camera pose optimization during radiance fields training (BARF-likes method) 
+Below is my experiment with MASt3R+Splatfacto and camera pose optimization:
+
+https://github.com/user-attachments/assets/d5b7ba98-7d51-4b20-a81e-6f5e4c00a79d
+
 
 ## About VGGSfM and Mast3r 
 
