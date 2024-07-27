@@ -60,8 +60,8 @@ MASt3R is not suitable for inverse rendering but provides denser and more divers
 ### Further Camera Pose Refinement
 
 As discussed in [InstantSplat](https://arxiv.org/abs/2403.20309) and [issue #2](https://github.com/hwanhuh/Radiance-Fields-from-VGGSfM-Mast3r/issues/2), 
-MASt3R (and VGGSfM) poses can serve as a good initial point of the camera pose optimization during radiance fields training (BARF-likes method) 
-Below is my experiment with MASt3R+Splatfacto and camera pose optimization:
+MASt3R (and VGGSfM) poses can serve as a good initial point of the camera pose optimization during radiance fields training (BARF-likes method) .
+Below is the toy experiment of MASt3R + further camera pose optimization (Using Splatfacto):
 
 https://github.com/user-attachments/assets/d5b7ba98-7d51-4b20-a81e-6f5e4c00a79d
 
