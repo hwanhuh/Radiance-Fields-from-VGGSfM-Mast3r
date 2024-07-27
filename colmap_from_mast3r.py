@@ -10,6 +10,7 @@ from pathlib import Path
 from PIL import Image
 from typing import NamedTuple, Optional
 
+current_dir = os.getcwd()
 sys.path.append(os.path.join(current_dir, 'mast3r'))
 from mast3r.model import AsymmetricMASt3R
 from mast3r.fast_nn import fast_reciprocal_NNs
