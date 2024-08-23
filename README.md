@@ -8,6 +8,8 @@ The objective is to compare their performances and understand the advantages and
 - [**VGGSfM**](https://github.com/facebookresearch/vggsfm): Results of (2D) Gaussian Splatting using VGGSfM.
 - [**Mast3r**](https://github.com/naver/mast3r): Implementation and results of (2D) Gaussian Splatting using Mast3r.
 
+- Related Blog Post: [Radiance Fields from Deep-based Structure-from-Motion](https://hwan-h-heo.github.io/hwan-h-heo.io/blogs/posts/240721_sfm/post.html)
+
 ### Installation 
 You should install Viser and plyfile 
 ```bash
